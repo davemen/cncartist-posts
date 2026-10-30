@@ -1,0 +1,47 @@
+{
+  "arcs" : true,
+  "comments" : "parentheses",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "nc",
+  "footer" : [
+    "G0 Z{SAFEZ}",
+    "M5",
+    "G49",
+    "G0 X{HX} Y{HY}",
+    "M30"
+  ],
+  "header" : [
+    "//{NAME}",
+    "G90 G17 G40 G49 G80",
+    "{UNITS}"
+  ],
+  "id" : "centroid-acorn",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "Centroid Acorn (CNC12)",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : true,
+  "spindleDwell" : 3,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "S{RPM} M3"
+  ],
+  "supportsToolChange" : true,
+  "toolChange" : [
+    "//Tool {T}: {TOOL}",
+    "T{T} M6"
+  ],
+  "toolLengthOffset" : [
+    "G43 H{T}"
+  ],
+  "units" : "millimetres"
+}

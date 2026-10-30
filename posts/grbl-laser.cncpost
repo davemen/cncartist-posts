@@ -1,0 +1,46 @@
+{
+  "arcs" : true,
+  "comments" : "parentheses",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "nc",
+  "footer" : [
+    "M5",
+    "G0 X{HX} Y{HY}",
+    "M2"
+  ],
+  "header" : [
+    "//{NAME}",
+    "//Laser mode must be on ($32=1). Focus the laser before running.",
+    "G90 G94 G17",
+    "{UNITS}",
+    "M5"
+  ],
+  "id" : "grbl-laser",
+  "laser" : true,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "GRBL laser",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : false,
+  "spindleDwell" : 0,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "M4 S{RPM}"
+  ],
+  "supportsToolChange" : false,
+  "toolChange" : [
+    "//Laser: {TOOL}"
+  ],
+  "toolLengthOffset" : [
+
+  ],
+  "units" : "millimetres"
+}

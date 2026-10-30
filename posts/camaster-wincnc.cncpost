@@ -1,0 +1,45 @@
+{
+  "arcs" : true,
+  "comments" : "none",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "tap",
+  "footer" : [
+    "G0 Z{SAFEZ}",
+    "M5",
+    "G0 X{HX} Y{HY}",
+    "M30"
+  ],
+  "header" : [
+    "G90",
+    "{UNITS}"
+  ],
+  "id" : "camaster-wincnc",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "CAMaster · WinCNC",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : false,
+  "spindleDwell" : 0,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "S{RPM}",
+    "M3"
+  ],
+  "supportsToolChange" : true,
+  "toolChange" : [
+    "T{T}"
+  ],
+  "toolLengthOffset" : [
+
+  ],
+  "units" : "millimetres"
+}

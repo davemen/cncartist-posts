@@ -1,0 +1,46 @@
+{
+  "arcs" : true,
+  "comments" : "parentheses",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "nc",
+  "footer" : [
+    "G0 Z{SAFEZ}",
+    "M5",
+    "G0 X{HX} Y{HY}",
+    "M30"
+  ],
+  "header" : [
+    "//{NAME}",
+    "G90 G94 G17",
+    "{UNITS}"
+  ],
+  "id" : "grblhal",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "grblHAL · gSender",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : false,
+  "spindleDwell" : 2,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "M3 S{RPM}"
+  ],
+  "supportsToolChange" : true,
+  "toolChange" : [
+    "//Tool {T}: {TOOL}",
+    "M6 T{T}"
+  ],
+  "toolLengthOffset" : [
+
+  ],
+  "units" : "millimetres"
+}

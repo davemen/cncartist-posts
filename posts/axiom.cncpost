@@ -1,0 +1,45 @@
+{
+  "arcs" : true,
+  "comments" : "parentheses",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "nc",
+  "footer" : [
+    "G0 Z{SAFEZ}",
+    "M5",
+    "G0 X{HX} Y{HY}",
+    "M30"
+  ],
+  "header" : [
+    "//{NAME}",
+    "G90 G17",
+    "{UNITS}"
+  ],
+  "id" : "axiom",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "Axiom (RichAuto)",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : false,
+  "spindleDwell" : 0,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "M3 S{RPM}"
+  ],
+  "supportsToolChange" : false,
+  "toolChange" : [
+    "//Tool {T}: {TOOL}"
+  ],
+  "toolLengthOffset" : [
+
+  ],
+  "units" : "millimetres"
+}

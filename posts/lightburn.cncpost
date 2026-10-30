@@ -1,0 +1,46 @@
+{
+  "arcs" : true,
+  "comments" : "semicolon",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "gcode",
+  "footer" : [
+    "M5",
+    "G0 X{HX} Y{HY}",
+    "M2"
+  ],
+  "header" : [
+    "//{NAME}",
+    "//In LightBurn: File > Run GCode. Focus the laser first.",
+    "G90 G94 G17",
+    "{UNITS}",
+    "M5"
+  ],
+  "id" : "lightburn",
+  "laser" : true,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "LightBurn · GRBL laser",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : false,
+  "spindleDwell" : 0,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "M4 S{RPM}"
+  ],
+  "supportsToolChange" : false,
+  "toolChange" : [
+    "//Laser: {TOOL}"
+  ],
+  "toolLengthOffset" : [
+
+  ],
+  "units" : "millimetres"
+}

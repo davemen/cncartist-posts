@@ -1,0 +1,47 @@
+{
+  "arcs" : true,
+  "comments" : "parentheses",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "ngc",
+  "footer" : [
+    "G0 Z{SAFEZ}",
+    "M5",
+    "G49",
+    "G0 X{HX} Y{HY}",
+    "M2"
+  ],
+  "header" : [
+    "//{NAME}",
+    "G17 G90 G94 G40 G49 G64 P0.001",
+    "{UNITS}"
+  ],
+  "id" : "linuxcnc-inch",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "LinuxCNC, inches",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : true,
+  "spindleDwell" : 2,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "S{RPM} M3"
+  ],
+  "supportsToolChange" : true,
+  "toolChange" : [
+    "//Tool {T}: {TOOL}",
+    "T{T} M6"
+  ],
+  "toolLengthOffset" : [
+    "G43 H{T}"
+  ],
+  "units" : "inches"
+}

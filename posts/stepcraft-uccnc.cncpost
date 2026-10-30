@@ -1,0 +1,46 @@
+{
+  "arcs" : true,
+  "comments" : "parentheses",
+  "decimals" : 3,
+  "dialect" : "gcode",
+  "dwell" : [
+    "G4 P{DWELL}"
+  ],
+  "fileExtension" : "tap",
+  "footer" : [
+    "G0 Z{SAFEZ}",
+    "M5",
+    "G0 X{HX} Y{HY}",
+    "M30"
+  ],
+  "header" : [
+    "//{NAME}",
+    "G90 G94 G91.1 G40 G49 G17",
+    "{UNITS}"
+  ],
+  "id" : "stepcraft-uccnc",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : true,
+  "name" : "Stepcraft · UCCNC",
+  "pause" : [
+    "M0"
+  ],
+  "rotary" : true,
+  "spindleDwell" : 0,
+  "spindleOff" : [
+    "M5"
+  ],
+  "spindleOn" : [
+    "S{RPM} M3"
+  ],
+  "supportsToolChange" : true,
+  "toolChange" : [
+    "//Tool {T}: {TOOL}",
+    "T{T} M6"
+  ],
+  "toolLengthOffset" : [
+    "G43 H{T}"
+  ],
+  "units" : "millimetres"
+}

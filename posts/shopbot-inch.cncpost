@@ -1,0 +1,48 @@
+{
+  "arcs" : false,
+  "comments" : "apostrophe",
+  "decimals" : 3,
+  "dialect" : "shopbot",
+  "dwell" : [
+    "PAUSE {DWELL}"
+  ],
+  "fileExtension" : "sbp",
+  "footer" : [
+    "JZ, {SAFEZ}",
+    "C7",
+    "J2, {HX}, {HY}",
+    "END"
+  ],
+  "header" : [
+    "//{NAME}",
+    "SA",
+    "{UNITS}"
+  ],
+  "id" : "shopbot-inch",
+  "laser" : false,
+  "lineNumberStep" : 0,
+  "modalMotion" : false,
+  "name" : "ShopBot, inches",
+  "pause" : [
+    "PAUSE"
+  ],
+  "rotary" : false,
+  "spindleDwell" : 3,
+  "spindleOff" : [
+    "C7"
+  ],
+  "spindleOn" : [
+    "TR, {RPM}",
+    "C6"
+  ],
+  "supportsToolChange" : true,
+  "toolChange" : [
+    "//Tool {T}: {TOOL}",
+    "&Tool = {T}",
+    "C9"
+  ],
+  "toolLengthOffset" : [
+
+  ],
+  "units" : "inches"
+}
